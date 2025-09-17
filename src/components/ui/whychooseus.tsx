@@ -54,7 +54,7 @@ export default function whychooseus() {
             <p className="text-sm mt-1 tracking-wider mb-6 border-b-1 pb-6">{c.subtitle}</p>
             {c.points.map((p, n) => (
             <ul key={n}>
-              <li className={`flex tracking-wider py-2`}>{p} {i  === 1 ?  <Check className="ml-auto" width={30} height={25}/> : <X className="ml-auto" width={30} height={25}/>  }</li>
+              <li className={`flex tracking-wider py-2`}>{p} {i  === 1 ?  <Check className="ml-auto text-primary" width={30} height={25}/> : <X className="ml-auto text-red-600" width={30} height={25}/>  }</li>
             </ul>
               ))}
           </div>

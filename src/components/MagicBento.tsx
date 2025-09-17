@@ -2,6 +2,9 @@
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
+import Seo from './ui/cardsDesign/seo';
+import Responsive from './ui/cardsDesign/responsive';
+import Performance from './ui/cardsDesign/performance';
 
 export interface BentoCardProps {
   color?: string;
@@ -10,6 +13,7 @@ export interface BentoCardProps {
   label?: string;
   textAutoHide?: boolean;
   disableAnimations?: boolean;
+  design?: React.ComponentType
 }
 
 export interface BentoProps {
@@ -36,25 +40,28 @@ const cardData: BentoCardProps[] = [
     color: '#0a1006',
     title: 'Get Found Easily',
     description: 'Higher Google visibility, more customers.',
-    label: 'SEO Optimization'
+    label: 'SEO Optimization',
+    design: Seo
   },
   {
     color: '#0a1006',
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
+    title: 'One Website, Every Device',
+    description: 'Mobile, tablet, and desktop ready.',
+    label: 'Responsive Design',
+    design: Responsive
   },
   {
     color: '#0a1006',
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Teamwork'
+    title: 'Speed matters',
+    description: 'Fast-loading sites that users love.',
+    label: 'High Performance',
+    design: Performance
   },
   {
     color: '#0a1006',
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    title: 'Client Conversion',
+    description: 'Turn Visitors Into Clients',
+    label: 'More sales'
   },
   {
     color: '#0a1006',
@@ -707,6 +714,9 @@ const MagicBento: React.FC<BentoProps> = ({
                   <div className="card__header flex justify-between gap-3 relative text-white">
                     <span className="card__label text-base">{card.label}</span>
                   </div>
+                    <div>
+                      {card.design && <card.design />}
+                    </div>
                   <div className="card__content flex flex-col relative text-white">
                     <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                       {card.title}
