@@ -1,130 +1,76 @@
 
+type Skill = {
+  name: string
+  icon: string
+}
 
-export default function Stack() {
-    return(
-        <>
-        <div>
-            <div className="border-2 border-accent m-5 p-10 rounded-2xl">
-           <h1 className="text-xl font-bold mb-4">Frontend</h1>
-<div className="w-full">
-  <div className="flex flex-wrap gap-6">
-    
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-      <p className="text-sm mt-2">JavaScript</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-      <p className="text-sm mt-2">TypeScript</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-      <p className="text-sm mt-2">React</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
-      <p className="text-sm mt-2">Vite.js</p>
-    </div>
+type StackSectionProps = {
+  title: string
+  skills: Skill[]
+}
 
 
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12 bg-gray-100 p-1 rounded-sm" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" />
-      <p className="text-sm mt-2">Next.js</p>
-    </div>
+const frontend: Skill[] = [
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Vite.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" },
+  { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" },
+  { name: "Zustand", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/zustand/zustand-original.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" }
+]
 
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
-      <p className="text-sm mt-2">Redux</p>
-    </div>
+const backend: Skill[] = [
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
+  { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" }
+]
 
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/zustand/zustand-original.svg" />
-      <p className="text-sm mt-2">Zustand</p>
-    </div>
+const deployment: Skill[]  = [
+  { name: "Netlify", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" },
+  { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
+  { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" }
+]
 
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
-      <p className="text-sm mt-2">Tailwind CSS</p>
-    </div>
-
-          
-
-  </div>
-</div>
-
+function SkillSection({ title, skills }: StackSectionProps) {
+  return (
+    <>
+    <div className="border-2 border-accent m-5 p-10 rounded-2xl last:m-0">
+      <h1 className="text-xl font-medium mb-4">{title}</h1>
+      <div className="w-full">
+        <div className="flex flex-wrap justify-between mx-2 gap-8">
+          {skills.map((skill, index)  => (
+            <div key={index} className="flex flex-col justify-between items-center my-5 transition-all hover:saturate-200">
+              <img className="h-20" src={skill.icon} />
+              <p className="text-sm mt-2">{skill.name}</p>
             </div>
-             <div className="border-2 border-accent m-5 p-10 rounded-2xl">
-              <h1 className="text-xl font-bold mb-4">Backend</h1>
-<div className="w-full">
-  <div className="flex flex-wrap gap-6">
-    
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-      <p className="text-sm mt-2">Node.js</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
-      <p className="text-sm mt-2">Express.js</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original-wordmark.svg" />
-      <p className="text-sm mt-2">Prisma</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
-      <p className="text-sm mt-2">MongoDB</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-      <p className="text-sm mt-2">PostgreSQL</p>
-    </div>
-
-    <div className="flex flex-col items-center">
-      <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
-      <p className="text-sm mt-2">Supabase</p>
-    </div>
-  </div>
-</div>
-
-            </div>
-           <div className="border-2 border-accent m-5 p-10 rounded-2xl">
-  <h1 className="text-xl font-bold mb-4">Deployment</h1>
-  <div className="w-full">
-    <div className="flex flex-wrap gap-6">
-
-      <div className="flex flex-col items-center">
-        <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg" />
-        <p className="text-sm mt-2">Netlify</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" />
-        <p className="text-sm mt-2">Vercel</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-        <p className="text-sm mt-2">AWS</p>
-      </div>
-
-      <div className="flex flex-col items-center">
-        <img className="w-12 h-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" />
-        <p className="text-sm mt-2">Google Cloud</p>
-      </div>
-
-    </div>
-  </div>
-
-
-            </div>
+          ))}
         </div>
-        </>
-    )
+      </div>
+    </div>
+     </>
+  )
+}
+
+export default function Skills() {
+  return (
+    <>
+      <div>
+      <div className="m-5 last:m-0">
+        <SkillSection  title="Frontend" skills={frontend} />
+      </div>
+      <div className="m-5 last:m-0">
+        <SkillSection title="Backend" skills={backend} />
+      </div>
+      <div className="m-5 last:my-0 ">
+        <SkillSection title="Deployment" skills={deployment} />
+      </div>
+    </div>
+    </>
+  )
 }

@@ -10,7 +10,7 @@ export default function Faq() {
     <Accordion
       type="single"
       collapsible
-      className="w-full"
+      className="mx-20 px-20 border-l-2 border-r-2  py-20"
       defaultValue="item-1"
     >
       <AccordionItem value="item-1">

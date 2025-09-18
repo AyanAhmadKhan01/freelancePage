@@ -5,6 +5,9 @@ import { gsap } from 'gsap';
 import Seo from './ui/cardsDesign/seo';
 import Responsive from './ui/cardsDesign/responsive';
 import Performance from './ui/cardsDesign/performance';
+import MoreSales from './ui/cardsDesign/moreSales';
+import Support from './ui/cardsDesign/support';
+import Security from './ui/cardsDesign/security';
 
 export interface BentoCardProps {
   color?: string;
@@ -61,19 +64,23 @@ const cardData: BentoCardProps[] = [
     color: '#0a1006',
     title: 'Client Conversion',
     description: 'Turn Visitors Into Clients',
-    label: 'More sales'
+    label: 'More sales',
+    design: MoreSales 
   },
   {
     color: '#0a1006',
-    title: 'Integration',
-    description: 'Connect favorite tools',
-    label: 'Connectivity'
+    title: 'Support',
+    description: '4 Month Dev Support',
+    label: 'Bug Resolve',
+    design: Support
+
   },
   {
     color: '#0a1006',
     title: 'Security',
     description: 'Enterprise-grade protection',
-    label: 'Protection'
+    label: 'Protection',
+    design: Security 
   }
 ];
 
