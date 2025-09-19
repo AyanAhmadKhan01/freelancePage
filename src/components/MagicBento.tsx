@@ -70,7 +70,7 @@ const cardData: BentoCardProps[] = [
   {
     color: '#0a1006',
     title: 'Support',
-    description: '4 Month Dev Support',
+    description: '4 Month Free Dev Support',
     label: 'Bug Resolve',
     design: Support
 

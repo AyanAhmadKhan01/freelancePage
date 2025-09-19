@@ -31,6 +31,7 @@ export default function RootLayout({
       <body
           className={`${montserrat.variable} ${inter.variable} antialiased`}
       >
+      
         <ThemeProvider
         attribute={"class"}
         defaultTheme={'dark'}
