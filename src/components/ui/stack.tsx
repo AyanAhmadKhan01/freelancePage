@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 type Skill = {
   name: string
@@ -46,7 +47,7 @@ function SkillSection({ title, skills }: StackSectionProps) {
         <div className="flex flex-wrap justify-between mx-2 gap-8">
           {skills.map((skill, index)  => (
             <div key={index} className="flex flex-col justify-between items-center my-5 transition-all hover:saturate-200">
-              <img className="h-20" src={skill.icon} />
+              <Image width={80} height={80} src={skill.icon} alt="stackicon"/>
               <p className="text-sm mt-2">{skill.name}</p>
             </div>
           ))}

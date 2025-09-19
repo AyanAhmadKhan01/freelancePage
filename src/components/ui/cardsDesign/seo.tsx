@@ -39,7 +39,7 @@ export default function Design() {
                className="ml-auto flex-shrink-0" 
                width={30} 
                height={30} 
-               alt="gg"
+               alt="Cursor"
                style={{
                  width: 'clamp(24px, 3vw + 18px, 32px)',
                  height: 'clamp(24px, 3vw + 18px, 32px)'

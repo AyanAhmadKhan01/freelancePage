@@ -1,5 +1,5 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { forwardRef, useRef, useMemo, useLayoutEffect, MutableRefObject } from 'react';
+import { forwardRef, useRef, useMemo, useLayoutEffect} from 'react';
 import { Color, Mesh } from 'three';
 import Hero from './ui/hero';
 
@@ -70,7 +70,14 @@ void main() {
 `;
 
 interface SilkPlaneProps {
-  uniforms: any;
+  uniforms: {
+    uSpeed: { value: number };
+    uScale: { value: number };
+    uNoiseIntensity: { value: number };
+    uColor: { value: Color };
+    uRotation: { value: number };
+    uTime: { value: number };
+  };
 }
 
 const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane({ uniforms }, ref) {
@@ -84,7 +91,7 @@ const SilkPlane = forwardRef<Mesh, SilkPlaneProps>(function SilkPlane({ uniforms
 
   useFrame((_, delta) => {
     if (ref && 'current' in ref && ref.current) {
-      // @ts-ignore
+      // @ts-expect-error - Three.js material uniforms access
       ref.current.material.uniforms.uTime.value += 0.1 * delta;
     }
   });

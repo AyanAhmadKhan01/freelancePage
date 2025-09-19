@@ -14,6 +14,7 @@ export default function MoreSales() {
         }}>Last 7 Days</h2>
       </div>
 
+
       <div className="space-y-1.5 sm:space-y-2 px-1 sm:px-2 lg:px-0 flex-1">
         <div className="flex items-center bg-[rgba(255,255,255,.05)] rounded-lg lg:rounded-xl p-2 sm:p-3 lg:p-4 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out min-h-[2.5rem] sm:min-h-[3rem]">
           <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/20 mr-3 flex-shrink-0">
@@ -47,7 +48,7 @@ export default function MoreSales() {
           }}>2.2K</h2>
         </div>
 
-        
+
         <div className="flex items-center bg-[rgba(255,255,255,.05)] rounded-lg lg:rounded-xl p-2 sm:p-3 lg:p-4 shadow-sm hover:shadow-md transition-all duration-300 ease-in-out min-h-[2.5rem] sm:min-h-[3rem]">
           <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-primary/20 mr-3 flex-shrink-0">
             <DollarSign className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-primary" />
