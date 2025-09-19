@@ -41,11 +41,11 @@ export default function whychooseus() {
 
   return (
     <>
-      <div  className="mt-16 lg:mt-90 min-h-[80vh] px-4 lg:px-0">
+      <div  className="mt-16 lg:mt-90 min-h-[90vh] px-4 lg:px-0">
           <div className="border-t-2 w-[120px] lg:w-[200px] ml-auto border-primary"></div>
         <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} width={40} height={40} className="lg:w-[50px] lg:h-[50px]" alt="cursor"/>
         
-        <div className="hidden lg:grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]">
+        <div className="hidden lg:grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] pb-90">
              {json.cards.map((c, i) => (
           <motion.div 
             key={i} 
