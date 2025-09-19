@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "./themeProvider";
 
 
-
 const montserrat = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
@@ -17,7 +16,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "WeBuild",
+  title: "MvpFast",
   description: "Get Your MVP Built Fast and Scalable",
 };
 

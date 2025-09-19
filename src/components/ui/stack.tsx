@@ -40,7 +40,7 @@ const deployment: Skill[]  = [
 function SkillSection({ title, skills }: StackSectionProps) {
   return (
     <>
-    <div className="border-2 border-accent m-5 p-10 rounded-2xl last:m-0">
+    <div id="tech" className="scroll-mt-40 border-2 border-accent m-5 p-10 rounded-2xl last:m-0">
       <h1 className="text-xl font-medium mb-4">{title}</h1>
       <div className="w-full">
         <div className="flex flex-wrap justify-between mx-2 gap-8">

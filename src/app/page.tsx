@@ -1,11 +1,9 @@
 'use client'
 import Silk from "@/components/Silk";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 
 const Navbar = dynamic(() => import("@/components/ui/navbar"), {ssr: true})
-const Hero = dynamic(() => import("@/components/ui/hero"), {ssr: true})
 const Whychooseus = dynamic(() => import("@/components/ui/whychooseus"), {ssr: true})
 const Service = dynamic(() => import("@/components/ui/service"), {ssr: true})
 const Stack = dynamic(() => import("@/components/ui/stack"), {ssr: true})

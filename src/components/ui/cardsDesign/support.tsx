@@ -6,7 +6,7 @@ const supportIcons = [
 
 export default function SupportIconRow() {
   return (
-    <div className="flex flex-wrap gap-2 sm:gap-3 justify-center items-center">
+    <div className="flex flex-wrap gap-2 m-2 sm:gap-3 justify-center items-center">
       {supportIcons.map((Icon, index) => (
         <div 
           key={index} 

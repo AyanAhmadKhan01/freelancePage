@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Booknow() {
   return (
     <>
     
-      <div className="border-2 mx-5 bg-primary p-4 rounded-t-xl">
+      <div id="book" className="scroll-mt-35 border-2 mx-5 bg-primary p-4 rounded-t-xl">
   <div className="relative h-full bg-black m-6 rounded-4xl overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-white/5" />
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_150%_100%_at_50%_50%,rgba(132,204,22,0.15),transparent_70%)]" />
@@ -41,11 +43,17 @@ export default function Booknow() {
       <h1 className="text-5xl text-white text-center font-extrabold leading-tight">
         Get Your MVP Built <br /> Fast and Scalable
       </h1>
-      <button
-        className="bg-[rgb(132,204,22)] text-black px-8 py-3 mt-6 rounded-2xl cursor-pointer hover:brightness-110 transition"
-      >
+      <Link href={'https://calendly.com/ayanahmadkhan042/30min'}>
+       <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.8 }}
+                className="bg-primary p-2 sm:p-3 rounded-2xl xl:rounded-3xl mt-5 border-b-6 xl:border-b-8 border-r-3 xl:border-r-4 shadow-2xl cursor-pointer text-sm xl:text-base"
+           
+         >
+     
         Book Now
-      </button>
+      </motion.div>
+      </Link>
     </div>
   </div>
 </div>

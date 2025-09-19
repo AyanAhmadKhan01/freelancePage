@@ -10,49 +10,62 @@ export default function Faq() {
     <Accordion
       type="single"
       collapsible
-      className="mx-20 px-20 border-l-2 border-r-2  py-20"
+      className=" md:mx-20  md:px-20 mx-8 px-8 border-l-2 border-r-2  py-20"
       defaultValue="item-1"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger>Product Information</AccordionTrigger>
+        <AccordionTrigger>What services do we offer?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            Our flagship product combines cutting-edge technology with sleek
-            design. Built with premium materials, it offers unparalleled
-            performance and reliability.
-          </p>
-          <p>
-            Key features include advanced processing capabilities, and an
-            intuitive user interface designed for both beginners and experts.
+           We provide end-to-end web solutions, including custom website design, development, e-commerce, web apps, and ongoing support.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Shipping Details</AccordionTrigger>
+        <AccordionTrigger>How long does it take us to build a website?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            We offer worldwide shipping through trusted courier partners.
-            Standard delivery takes 3-5 business days, while express shipping
-            ensures delivery within 1-2 business days.
-          </p>
-          <p>
-            All orders are carefully packaged and fully insured. Track your
-            shipment in real-time through our dedicated tracking portal.
+           Timelines depend on the project scope. A basic website usually takes 2–4 weeks, while more complex projects may take 6–12 weeks.
           </p>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Return Policy</AccordionTrigger>
+        <AccordionTrigger>How much do our websites cost?</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            We stand behind our products with a comprehensive 30-day return
-            policy. If you&apos;re not completely satisfied, simply return the
-            item in its original condition.
+           Our pricing varies by scope and features. After understanding your requirements, we provide a clear, tailored quote.
           </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+        <AccordionTrigger>Do we work with small businesses and startups?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
-            Our hassle-free return process includes free return shipping and
-            full refunds processed within 48 hours of receiving the returned
-            item.
+          Yes, we specialize in helping startups and small businesses build professional, scalable online presences.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-5">
+        <AccordionTrigger>Can we redesign or improve an existing website?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+           Absolutely. We can modernize your site, improve speed, optimize for SEO, and refresh the overall design.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-6">
+        <AccordionTrigger>Will your website be mobile-friendly?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+          Yes. We ensure all our websites are fully responsive and work seamlessly across devices.
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-7">
+        <AccordionTrigger>Do we provide ongoing maintenance?</AccordionTrigger>
+        <AccordionContent className="flex flex-col gap-4 text-balance">
+          <p>
+           Yes, we offer flexible maintenance and support packages to keep your site updated, secure, and performing well.
           </p>
         </AccordionContent>
       </AccordionItem>

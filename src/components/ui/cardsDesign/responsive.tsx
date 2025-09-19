@@ -7,7 +7,7 @@ export default function Responsive() {
        <div 
          className="w-full h-full bg-secondary rounded-xl border-2 border-dashed border-primary relative"
          style={{
-           minHeight: 'clamp(100px, 15vh, 180px)',
+           minHeight: 'clamp(100px, 13vh, 180px)',
            maxHeight: '200px'
          }}
        >

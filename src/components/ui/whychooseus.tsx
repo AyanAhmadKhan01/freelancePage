@@ -23,10 +23,6 @@ export default function whychooseus() {
         "Agency-grade quality with solo speed",
         "Transparent pricing & full handover"
       ],
-      "cta": {
-        "text": "Book a Meeting",
-        "href": "#book"
-      }
     },
     {
       "title": "Offshore / Template Shops",
@@ -44,7 +40,7 @@ export default function whychooseus() {
 
   return (
     <>
-      <div className="mt-16 lg:mt-90 min-h-[80vh] px-4 lg:px-0">
+      <div  className="mt-16 lg:mt-90 min-h-[80vh] px-4 lg:px-0">
           <div className="border-t-2 w-[120px] lg:w-[200px] ml-auto border-primary"></div>
         <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} width={40} height={40} className="lg:w-[50px] lg:h-[50px]" alt="gg"/>
         
@@ -79,17 +75,12 @@ export default function whychooseus() {
                 </div>
               ))}
             </div>
-            {c.cta && (
-              <button className="mt-6 w-full bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                {c.cta.text}
-              </button>
-            )}
           </div>
               ))}
         </div>
         
            <div className="border-2 w-[120px] lg:w-[200px] mr-auto border-primary mt-8 lg:mt-0"></div>
-         <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} className="ml-auto" width={40} height={40} alt="gg"/>
+         <Image  src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} className="ml-auto" width={40} height={40} alt="gg"/>
       </div>
     </>
   );
