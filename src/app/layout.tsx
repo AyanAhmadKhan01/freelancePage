@@ -1,6 +1,7 @@
 import { Montserrat, Inter} from "next/font/google"
 import "./globals.css";
 import { ThemeProvider } from "./themeProvider";
+import Script from "next/script";
 
 
 const montserrat = Montserrat({
@@ -56,9 +57,22 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
         >
+           <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-BWSNNCG0B7"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BWSNNCG0B7', {
+            page_path: window.location.pathname,
+          });
+        `}</Script>
         {children}
         </ThemeProvider>
       </body>
+      
     </html>
   );
 }
