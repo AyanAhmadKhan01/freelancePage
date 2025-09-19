@@ -19,6 +19,9 @@ export const metadata = {
     "Mvp Fast offers full-stack website development in Bangalore. Experts in React, Next.js, Node.js, Prisma, MongoDB, AWS, and more.",
   keywords:
     "Web Development Agency Bangalore, Full Stack Development Bangalore, Next.js Developers Bangalore, React Agency India, Startup Web Agency Bangalore",
+  verification: {
+    google: "tdvRZe94YDHuXcrksdEvvVCSB8_z6OtNkDifOFp5gH4",
+  },
   openGraph: {
     title: "Mvp Fast - Website Development Agency in Bangalore",
     description:
@@ -47,8 +50,6 @@ export default function RootLayout({
       <body
           className={`${montserrat.variable} ${inter.variable} antialiased`}
       >
-        
-      
         <ThemeProvider
         attribute={"class"}
         defaultTheme={'dark'}
