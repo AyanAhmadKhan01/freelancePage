@@ -26,16 +26,16 @@ export const metadata = {
     title: "Mvp Fast - Website Development Agency in Bangalore",
     description:
       "We build fast, scalable, modern websites using React, Next.js, Node.js, Prisma, MongoDB, PostgreSQL, AWS & more.",
-    url: "https://mvpfast.com/",
+    url: "https://mvpfast.vercel.app",
     images: [
       {
-        url: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1758294633/mkqetfpr21r7eovalpwx.png",
+        url: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1758325540/zhqadz7p8wunxoczo9mh.png",
         alt: "Mvp Fast Preview",
       },
     ],
   },
   alternates: {
-    canonical: "https://mvpfast.com/",
+    canonical: "https://mvpfast.vercel.app",
   },
 };
 
