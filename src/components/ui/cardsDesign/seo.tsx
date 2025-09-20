@@ -32,7 +32,7 @@ export default function Design() {
                 lineHeight: 'clamp(1.1rem, 1.8vw + 0.8rem, 1.5rem)'
               }}
             >
-              ayancodes.com
+              MvpFast.com
             </h1>
              <Image 
                src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} 
