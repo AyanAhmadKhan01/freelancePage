@@ -37,6 +37,11 @@ export const metadata = {
   alternates: {
     canonical: "https://mvpfast.vercel.app",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 
