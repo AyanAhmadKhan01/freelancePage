@@ -61,12 +61,12 @@ price: "$149",
   }
 ];
     return(
-        <> <div className="text-center py-10 border-y-1">
+        <> <div id="pricing" className="text-center py-10 border-y-1">
   <h2 className="text-xl opacity-35">// Pay Once. Own Your Website.</h2>
   <h1 className="text-5xl mt-2">Simple Pricing</h1>
 </div>
 
-          <div className="flex justify-center gap-5 m-auto md:mx-10 ">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5 m-auto md:mx-10 ">
       {services.map((service, idx) => (
         <div key={idx} className={`border-x-2 border-[rgba(255,255,255,0.09)] w-[500px] shadow-sm backdrop-blur-md ${idx === 1 ? 'bg-[rgba(255,255,255,.05)]' : ''}`}>
              <div className="flex gap-12 items-center justify-center my-10"> 

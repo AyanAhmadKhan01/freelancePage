@@ -89,8 +89,8 @@ export default function BookNow() {
                                 transition={{ duration: 0.5, delay: 0.1 * index }}
                                 className="rounded-3xl border-2 border-[rgba(255,255,255,0.09)] bg-[rgba(255,255,255,0.05)] p-5 shadow-sm"
                             >
-                                <div className="flex items-start gap-4">
-                                    <div className="flex p-10 items-center justify-center rounded-2xl border border-primary/30 bg-primary/10 text-primary">
+                                <div className="flex h-full items-start gap-4">
+                                    <div className="flex h-full w-[30%] items-center justify-center rounded-2xl border border-primary/30 bg-primary/10 text-primary">
                                         {step.icon}
                                     </div>
                                     <div className="space-y-2">

@@ -24,7 +24,7 @@ export default function Footer() {
                   {socialIcons.map((s, i) => {
                     const IconComponent = s.icon;
                     return (
-                <div key={i} className="flex rounded-lg bg-primary m-2 lg:m-4 p-2 border-b-4 border-r-4 cursor-pointer hover:scale-105 transition-transform">
+                <div key={i} className="flex rounded-lg bg-[rgba(255,255,255,.07)] m-2 lg:m-4 p-3 border-b-4 border-r-4 cursor-pointer hover:scale-105 transition-transform">
                    <Link href={s.Link} target="_blank"><IconComponent className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[30px] lg:h-[30px]" /></Link>
                 </div>
                     );

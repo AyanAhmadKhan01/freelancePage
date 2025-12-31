@@ -56,6 +56,14 @@ export default function Navbar() {
                         Home
                     </h3>
                     </Link>
+                       <Link href={'#pricing'}>
+                    <h3 
+                        className="cursor-pointer hover:text-primary transition-colors py-2 border-b border-primary/10"
+                        onClick={() => setIsOpen(false)}
+                    >
+                        Pricing
+                    </h3>
+                    </Link>
                      <Link href={'#feature'}>
                     <h3 
                         className="cursor-pointer hover:text-primary transition-colors py-2 border-b border-primary/10"
