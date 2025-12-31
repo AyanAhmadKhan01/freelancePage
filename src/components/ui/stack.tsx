@@ -41,7 +41,8 @@ const deployment: Skill[]  = [
 function SkillSection({ title, skills }: StackSectionProps) {
   return (
     <>
-    <div id="tech" className="scroll-mt-40 border-2 border-accent m-5 p-10 rounded-2xl last:m-0">
+ 
+    <div id="tech" className="scroll-mt-40 border-2  m-5 p-10 rounded-2xl last:m-0">
       <h1 className="text-xl font-medium mb-4">{title}</h1>
       <div className="w-full">
         <div className="flex flex-wrap justify-between mx-2 gap-8">
@@ -61,6 +62,10 @@ function SkillSection({ title, skills }: StackSectionProps) {
 export default function Skills() {
   return (
     <>
+       <div className="text-right pr-10 mt-5 mb-10 py-10 border-y-1">
+  <h2 className="text-xl opacity-35">// Technologies We Use</h2>
+  <h1 className="text-5xl mt-2">Our Stack</h1>
+</div>
       <div>
       <div className="m-5 last:m-0">
         <SkillSection  title="Frontend" skills={frontend} />

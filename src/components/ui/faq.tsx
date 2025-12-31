@@ -7,15 +7,21 @@ import {
 
 export default function Faq() {
   return (
+    <>
+        <div className="text-center pr-10 mt-5  py-10 border-y-1">
+  <h2 className="text-xl opacity-35">// Common Questions</h2>
+  <h1 className="text-5xl mt-2">FAQ</h1>
+</div>
+ 
     <Accordion
       type="single"
       collapsible
-      className=" md:mx-20  md:px-20 mx-8 px-8 border-l-2 border-r-2  py-20"
+      className="md:mx-20 md:px-20 mx-8 px-8 border-l-2 border-r-2  py-20 "
       defaultValue="item-1"
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>What services do we offer?</AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4 text-balance ">
           <p>
            We provide end-to-end web solutions, including custom website design, development, e-commerce, web apps, and ongoing support.
           </p>
@@ -70,5 +76,6 @@ export default function Faq() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
+       </>
   )
 }

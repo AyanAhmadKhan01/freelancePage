@@ -29,11 +29,11 @@ export default function Navbar() {
                       <Link href={'#book'}>
                     <h3 className="cursor-pointer hover:text-primary transition-colors mr-5">Book a Meeting</h3>
                     </Link>
-                    {/* <ModeToggle/> */}
+                   
                 </div>
 
                 <div className="flex lg:hidden items-center gap-3">
-                    {/* <ModeToggle/> */}
+                
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         className="p-2 rounded-lg hover:bg-primary/20 transition-colors"

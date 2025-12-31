@@ -11,6 +11,7 @@ const Stack = dynamic(() => import("@/components/ui/stack"), {ssr: true})
 const Faq = dynamic(() => import("@/components/ui/faq"), {ssr: false})
 const BookNow = dynamic(() => import("@/components/ui/booknow"), {ssr: true})
 const Footer = dynamic(() => import("@/components/ui/footer"), {ssr: true})
+const Pakages = dynamic(() => import("@/components/ui/pakages"), {ssr: true})
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
     <div className="m-auto max-w-[1500px] w-[100%]  border-l-2  border-r-2">
     <Navbar/>
     <Whychooseus/>
+    <Pakages/>
     <Service/>
     <Stack/>
     <Faq/>

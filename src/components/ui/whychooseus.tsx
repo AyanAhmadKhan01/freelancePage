@@ -22,11 +22,13 @@ export default function whychooseus() {
       "points": [
         "MVP in weeks, production-ready code",
         "Agency-grade quality with solo speed",
-        "Transparent pricing & full handover"
+        "Transparent pricing & full handover",
+        "Design, development, and deployment",
+         "Domain and hosting included for 1 year",
       ],
     },
     {
-      "title": "Offshore / Template Shops",
+      "title": "Template Shops",
       "subtitle": "Cheap upfront, costly later.",
       "points": [
         "Limited customization",
@@ -40,11 +42,16 @@ export default function whychooseus() {
 
 
   return (
-    <>
-      <div  className="mt-16 lg:mt-90 min-h-[90vh] px-4 lg:px-0">
+    <>  
+    <div className="pl-10 py-10 border-y-1">
+      <h2 className="text-xl opacity-35">// Everything You Need to Launch Fast</h2>
+      <h1 className="text-5xl mt-2">Why Us</h1>
+    </div>
+      <div  className="mt-16 lg:mt-60 px-4 lg:px-0">
           <div className="border-t-2 w-[120px] lg:w-[200px] ml-auto border-primary"></div>
-        <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} width={40} height={40} className="lg:w-[50px] lg:h-[50px]" alt="cursor"/>
-        
+           
+        <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} width={40} height={40} className="lg:w-[50px] lg:h-[50px] " alt="cursor"/>
+
         <div className="hidden lg:grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] pb-90">
              {json.cards.map((c, i) => (
           <motion.div 
@@ -53,7 +60,7 @@ export default function whychooseus() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className={`border-2 border-accent p-15 rounded-4xl ${i === 1 ? 'border-primary inset-shadow-[0_0_6px_#84cc16] animate-out' : i === 0 ? '-translate-y-65 ml-2': i === 2 ? 'translate-y-65 mr-2' : ''}`}
+            className={`border-y-1 p-14 h-fit  ${i === 1 ? 'bg-[rgba(255,255,255,.02)] animate-out' : i === 0 ? '-translate-y-65 ': i === 2 ? 'translate-y-65' : ''}`}
           >
             <h3 className="text-2xl">{c.title}</h3>
             <p className="text-sm mt-1 tracking-wider mb-6 border-b-1 pb-6">{c.subtitle}</p>

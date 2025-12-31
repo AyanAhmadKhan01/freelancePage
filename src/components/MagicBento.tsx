@@ -118,7 +118,7 @@ const MagicBento: React.FC<BentoProps> = ({
             grid-template-columns: 1fr;
             width: 100%;
             margin: 0 auto;
-            padding: 30px;
+            padding:0px 20px;
           }
           
           @media (min-width: 600px) {

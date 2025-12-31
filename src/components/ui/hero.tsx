@@ -17,7 +17,8 @@ export default function Hero() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-medium text-center xl:text-left"
             >
-                We Build <span className="text-primary font-extrabold">MVPs Fast</span>. We Scale Them <span className="bg-accent">Smarter</span>
+            We Build Your <span className="text-primary font-extrabold">Website Fast</span>. We Keep It <span className="bg-accent">Running Smoothly</span>
+
             </motion.h1>
             
             <motion.div 
@@ -33,7 +34,7 @@ export default function Hero() {
                 transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
                 className="mt-3 text-base sm:text-lg xl:text-xl text-center xl:text-left max-w-2xl xl:max-w-none"
             >
-                Delivering modern, high-performance web solutions with the latest technology, built to last and designed to grow
+                From design to development, domain to hosting, everything is set up for you in one simple, one-time package.
             </motion.p>
             
             <motion.div 
@@ -54,6 +55,7 @@ export default function Hero() {
                 >
                     Book A Meeting
                 </motion.div>
+                
             </Link>
             
             <motion.div
@@ -113,21 +115,33 @@ export default function Hero() {
                 </motion.div>
             </motion.div>
 
+
+
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 2.1, ease: "easeOut" }}
                 className="mt-auto border-t-2 border-l-2 border-r-2 w-[90%] p-4 xl:p-6"
             >
-                <motion.h1 
-                    className="text-sm xl:text-base"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 2.3, duration: 0.5 }}
-                >
-                    
-                </motion.h1>
+               
+            
+
+                <div className="flex justify-center items-center select-none">
+                     <Link href={'https://tibblab.vercel.app/'} target="_blank">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.8 }}      
+         >
+           
+                <div className=" px-4 rounded-2xl cursor-pointer">
+    <h1 className="text-2xl md:text-3xl font-medium tracking-tighter">Tibb <span className='tracking-wide text-[hsl(209,96%,36%)]'>Labs</span></h1>
+                </div>
+             
+                </motion.div>
+                   </Link>
+                </div>
             </motion.div> 
+            
         </div>
 
         </>

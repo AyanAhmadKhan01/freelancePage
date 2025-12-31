@@ -11,7 +11,7 @@ export default function Footer() {
 
     return(
         <>
-        <div className="border-2 border-t-transparent mx-4 sm:mx-8 lg:mx-20 h-auto lg:min-h-[35vh] pb-6 lg:pb-0">
+        <div className="border-2 border-t-transparent mx-4 sm:mx-8 lg:mx-20  pb-6 lg:pb-0">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-8 lg:mt-16 mx-3 sm:mx-6 pb-6 lg:pb-10 border-b-2 gap-6 lg:gap-0">
                 
                 <div className="text-center lg:text-left">
