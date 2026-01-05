@@ -10,12 +10,12 @@ export default function Hero() {
         <>
 
 
-        <div id="home" className="flex flex-col justify-center items-center  pt-70 border-b-2 px-4 xl:px-0">
+        <div id="home" className="flex flex-col justify-center items-center  pt-70 border-b-2 sm:px-5 xl:px-0 ">
             <motion.h1 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] text-center xl:text-left "
+                className="text-xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] text-center xl:text-left "
             >
             We Build Your <span className="p-2 border-[rgba(255,255,255,.6)] backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)] ">Website Fast</span>
             </motion.h1>
@@ -23,7 +23,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.3, ease: "easeOut" }}
-                className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] xl:m-4 text-center xl:text-left"
+                className="text-xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] mt-2 xl:m-4 text-center xl:text-left"
             >
            We Keep It  <span className="p-2 border-primary  border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]">Running Smoothly</span>
 
