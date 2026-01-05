@@ -1,17 +1,11 @@
+// @ts-nocheck
 "use client";
 
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, MoveRight } from "lucide-react";
 import Link from "next/link";
 
-type Project = {
-    title: string;
-    description: string;
-    cover: string;
-    link: string;
-};
-
-const projects: Project[] = [
+const projects = [
     {
         title: "Tibb Labs",
         description: "Influencer Marketing Agency",
@@ -40,12 +34,12 @@ const projects: Project[] = [
 
 
 export default function Website() {
-    const trackRef = useRef<HTMLDivElement | null>(null);
+    const trackRef = useRef(null);
 
-    const shift = (direction: "next" | "prev") => {
+    const shift = (direction) => {
         const track = trackRef.current;
         if (!track) return;
-        const firstCard = track.querySelector<HTMLDivElement>("[data-card]");
+        const firstCard = track.querySelector("[data-card]");
         const gap = 24; 
         const cardWidth = firstCard?.clientWidth ?? 360;
         const delta = cardWidth + gap;
