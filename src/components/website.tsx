@@ -48,7 +48,7 @@ export default function Website() {
 
     return (
         <>
-            <div className="mx-auto flex w-full flex-col gap-5 mt-12 xl:mt-0 sm:px-6 lg:px-8">
+            <div className="mx-auto px-2 flex w-full flex-col gap-5 mt-12 xl:mt-0 sm:px-6 lg:px-8">
                   <div className="flex items-center gap-3 self-start lg:self-end">
                         <button
                             type="button"
