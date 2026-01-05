@@ -6,18 +6,17 @@ export default function Service() {
     const services = [
   {
     title: "AI Powered Website",
-    tagline: "Fast, fully hosted, worry-free",
+    tagline: "Fast, fully ready, worry-free",
     ideal: 'Portfolio, Landing Page, Small Business',
     features: [ 
-         "Up to 4 pages ",
-         "3 sections per page",
-         "Simple design",
+         "Up to 1 pages",
+         "5-8 sections per page",
+         "Clean design",
          "Fully responsive",
          "Basic SEO",
          "Basic Hover, Transition",
-         "2 Revision (text/colors only)",
-          "Domain & hosting included for 1 year",
-          "Delivery in 2–7 days",
+         "1 Revision (text/colors only)",
+         "Delivery in 2–7 days",
          ],
           
 price: "$149",
@@ -28,17 +27,16 @@ price: "$149",
     tagline: "Fully custom, clean code",
     ideal: 'Startup, Professional Portfolio, Marketing Site',
      features: [
-       "Up to 7 pages",
+       "Up to 4 pages",
        "6 Section Per Page",
-       "Moderate design",
+       "Heavy design",
        "Fully responsive",
        "SEO-ready",
        "Limited animations included",
-        "3 Revision",
-        "Domain & hosting included for 1 year",
-        "Delivery in 10–20 days",
+        "2 Revision",
+        "Delivery in 15–30 days",
      ],
-     price: "$349",
+     price: "$499",
     icon: <Layers size={75}  className="text-primary" />
   },
   {
@@ -47,16 +45,15 @@ price: "$149",
     ideal: 'SaaS, Marketplaces, Product MVP',
     features: [
       "Up to 15 pages",
-       "8 Section Per Page",
+       "6 Section Per Page",
       "Complex design",
       "Scalable, responsive",
       "SEO-ready",
       "Animations included",
       "4 Revision",
-      "Domain & hosting included for 1 year",
-      "Delivery in 5–12 weeks",
+      "Delivery in 5–18 weeks",
     ],
-    price: '$1500',
+    price: '$1999',
     icon: <Box size={75}  className="text-primary" />
   }
 ];
@@ -68,9 +65,9 @@ price: "$149",
 
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5 m-auto md:mx-10 ">
       {services.map((service, idx) => (
-        <div key={idx} className={`border-x-2 border-[rgba(255,255,255,0.09)] w-[500px] shadow-sm backdrop-blur-md ${idx === 1 ? 'bg-[rgba(255,255,255,.05)]' : ''}`}>
+        <div key={idx} className={`border-x-2 md:px-5 px-0 border-[rgba(255,255,255,0.09)] w-[500px] shadow-sm backdrop-blur-md ${idx === 1 ? 'bg-[rgba(255,255,255,.05)]' : ''}`}>
              <div className="flex gap-12 items-center justify-center my-10"> 
-              <h1 className="text-4xl">{service.price}<span className="text-xl opacity-60">/Lifetime</span></h1>
+              <h1 className="text-4xl">{service.price}<span className="text-xl opacity-60">/One-Time</span></h1>
               {service.icon}
               </div>
              

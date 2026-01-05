@@ -43,16 +43,16 @@ export default function whychooseus() {
 
   return (
     <>  
-    <div className="pl-10 py-10 border-y-1">
+    <div className="pl-10 py-10 border-y-1 mb-0 xl:mb-60">
       <h2 className="text-xl opacity-35">// Everything You Need to Launch Fast</h2>
       <h1 className="text-5xl mt-2">Why Us</h1>
     </div>
-      <div  className="mt-16 lg:mt-60 px-4 lg:px-0">
+      <div  className="mt-0 px-4 lg:px-0">
           <div className="border-t-2 w-[120px] lg:w-[200px] ml-auto border-primary"></div>
            
         <Image src={"/Keyboard-Asterisk-1--Streamline-Freehand.svg"} width={40} height={40} className="lg:w-[50px] lg:h-[50px] " alt="cursor"/>
 
-        <div className="hidden lg:grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] pb-90">
+        <div className="hidden xl:grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] pb-90">
              {json.cards.map((c, i) => (
           <motion.div 
             key={i} 
@@ -73,7 +73,7 @@ export default function whychooseus() {
               ))}
         </div>
 
-        <div className="lg:hidden space-y-6">
+        <div className="xl:hidden  space-y-6 m-3">
              {json.cards.map((c, i) => (
           <motion.div 
             key={i} 

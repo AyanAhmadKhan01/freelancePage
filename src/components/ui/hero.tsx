@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 import Image from "next/image"
 import Link from "next/link"
-
+import Website from "../website"
 
 export default function Hero() {
   
@@ -10,14 +10,22 @@ export default function Hero() {
         <>
 
 
-        <div id="home" className="flex flex-col justify-center items-center h-[80vh] pt-70 border-b-2 px-4 xl:px-0">
+        <div id="home" className="flex flex-col justify-center items-center  pt-70 border-b-2 px-4 xl:px-0">
             <motion.h1 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-medium text-center xl:text-left"
+                className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] text-center xl:text-left "
             >
-            We Build Your <span className="text-primary font-extrabold">Website Fast</span>. We Keep It <span className="bg-accent">Running Smoothly</span>
+            We Build Your <span className="p-2 border-[rgba(255,255,255,.6)] backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)] ">Website Fast</span>
+            </motion.h1>
+              <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.3, ease: "easeOut" }}
+                className="text-2xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] xl:m-4 text-center xl:text-left"
+            >
+           We Keep It  <span className="p-2 border-primary  border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]">Running Smoothly</span>
 
             </motion.h1>
             
@@ -32,7 +40,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
-                className="mt-3 text-base sm:text-lg xl:text-xl text-center xl:text-left max-w-2xl xl:max-w-none"
+                className="mt-3 text-base sm:text-lg xl:text-xl text-center max-w-2xl "
             >
                 From design to development, domain to hosting, everything is set up for you in one simple, one-time package.
             </motion.p>
@@ -41,7 +49,7 @@ export default function Hero() {
                 initial={{ width: 0 }}
                 animate={{ width: "auto" }}
                 transition={{ duration: 0.6, delay: 0.9, ease: "easeOut" }}
-                className="w-[110px] sm:w-[150px] lg:w-[170px] xl:w-[190px] h-[8px] xl:h-[10px] border-b-5 bg-primary rounded-4xl"
+               
             />
             
             <Link href={'https://calendly.com/ayanahmadkhan042/30min'}>
@@ -51,7 +59,7 @@ export default function Hero() {
                     transition={{ duration: 0.7, delay: 1.5, ease: "easeOut" }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.8 }}
-                    className="bg-primary p-2 sm:p-3 rounded-2xl xl:rounded-3xl mt-5 border-b-6 xl:border-b-8 border-r-3 xl:border-r-4 shadow-2xl cursor-pointer text-sm xl:text-base"
+                    className="py-4 px-20 mt-8 border-primary backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]"
                 >
                     Book A Meeting
                 </motion.div>
@@ -63,6 +71,7 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 1.8, ease: "backOut" }}
             >
+                
                 <motion.div
                     animate={{ 
                         y: [0, -8, 3, -5, 0],
@@ -80,9 +89,10 @@ export default function Hero() {
                         src={'/Cursor-Highlight-Click-1--Streamline-Freehand.svg'} 
                         width={60}  
                         height={65} 
-                        className="hidden xl:block text-amber-800 translate-x-20 -translate-y-10 drop-shadow-lg" 
+                        className="hidden xl:block translate-x-20 -translate-y-10 drop-shadow-lg" 
                         alt="cursor pointing to button"
                     />
+                  
                 </motion.div>
             </motion.div>
             
@@ -94,7 +104,7 @@ export default function Hero() {
                 <motion.div
                     animate={{                   
                         x: [0, 40, 80, 120, 60, -10, 20, 100, 0],
-                        y: [5, 8, 4, 9, 15, 20, 12, 7, 5],
+                        y: [5, 8, 4, 9, 10, 12, -12, 7, 5],
                         rotate: [0, 5, -3, 8, -5, 10, -2, 4, 0],
                         scale: [1, 1.03, 0.98, 1.05, 0.97, 1.02, 1.04, 0.99, 1]
                     }}
@@ -121,13 +131,14 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 2.1, ease: "easeOut" }}
-                className="mt-auto border-t-2 border-l-2 border-r-2 w-[90%] p-4 xl:p-6"
+                className=" w-[100%] xl:w-[90%] "
             >
                
             
 
                 <div className="flex justify-center items-center select-none">
-                     <Link href={'https://tibblab.vercel.app/'} target="_blank">
+                      
+                     {/* <Link href={'https://tibblab.vercel.app/'} target="_blank">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}      
@@ -138,12 +149,12 @@ export default function Hero() {
                 </div>
              
                 </motion.div>
-                   </Link>
+                   </Link> */}
                 </div>
-            </motion.div> 
-            
+                  <Website/>
+            </motion.div>     
+         
         </div>
-
         </>
     )
 }

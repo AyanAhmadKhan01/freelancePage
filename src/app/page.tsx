@@ -29,7 +29,6 @@ export default function Home() {
          gtag('config', 'G-BWSNNCG0B7');
        `}
      </Script>
-
      <Silk 
       speed={5}
       scale={1}
@@ -37,7 +36,9 @@ export default function Home() {
       noiseIntensity={1.5}
       rotation={0}
      />
-    <div className="m-auto max-w-[1500px] w-[100%]  border-l-2  border-r-2">
+       <div className="md:mx-6">
+    <div className="mx-auto max-w-[1500px] border-l-2 border-r-2">
+    
     <Navbar/>
     <Whychooseus/>
     <Pakages/>
@@ -46,6 +47,7 @@ export default function Home() {
     <Faq/>
     <BookNow/>
     <Footer/>
+    </div>
     </div>
     </>
   );

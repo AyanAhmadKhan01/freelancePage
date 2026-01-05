@@ -130,7 +130,7 @@ const Silk = ({ speed = 5, scale = 1, color = '#7B7481', noiseIntensity = 1.5, r
 
   return (
     <div className='rounded-4xl' style={{ position: 'relative', width: '100%', height: '100%' }}>
-      <Canvas
+      {/* <Canvas
         dpr={[1, 2]}
         frameloop="always"
         style={{
@@ -144,8 +144,9 @@ const Silk = ({ speed = 5, scale = 1, color = '#7B7481', noiseIntensity = 1.5, r
         <SilkPlane ref={meshRef} uniforms={uniforms} />
       </Canvas>
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <Hero />
-      </div>
+     
+      </div> */}
+         <Hero />
     </div>
   );
 };
