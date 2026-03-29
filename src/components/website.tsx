@@ -12,23 +12,25 @@ const projects = [
         cover:
             "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767320785/Screenshot_2026-01-02_072749_lmbt9h.png",
             link: 'https://tibblab.vercel.app',
+            time: '20days'
+    },
+     {
+        title: "Video Editor Portfolio",
+        description: "Responsive portfolio highlighting video editing projects.",
+        cover:
+            "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1773523289/Screenshot_2026-03-15_025113_hplcjw.png",
+              link: 'https://norzo16.vercel.app',
+               time: '3days'
+
     },
     {
         title: "SaaS Landing Page",
-        description: "Conversion-focused landing page designed for early-stage startups.",
+        description: "Conversion-focused landing page",
         cover:
             "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767587128/Screenshot_2026-01-05_095509_diewjf.png",
               link: 'https://demo-landing-page-1.vercel.app/',
+               time: '1day'
     },
-    {
-        title: "Demo Landing Page",
-        description: "Flagship app for tracking and managing nicotine pouches.",
-        cover:
-            "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767589156/Screenshot_2025-10-16_171318_authfi.png",
-              link: 'https://tibblab.vercel.app',
-
-    },
-
 ];
 
 
@@ -48,8 +50,8 @@ export default function Website() {
 
     return (
         <>
-            <div className="mx-auto px-2 flex w-full flex-col gap-5 mt-12 xl:mt-0 sm:px-6 lg:px-8">
-                  <div className="flex items-center gap-3 self-start lg:self-end">
+            <div className="mx-auto px-2 flex w-full flex-col gap-5 mt-12 xl:mt-0 sm:px-6 lg:px-8  pt-7 rounded-t-3xl">
+                  <div className="flex items-center  mb-5 gap-3 self-start lg:self-end">
                         <button
                             type="button"
                             onClick={() => shift("prev")}
@@ -70,32 +72,40 @@ export default function Website() {
 
                 <div
                     ref={trackRef}
-                    className="no-scrollbar grid grid-flow-col md:auto-cols-[minmax(530px,1fr)]  auto-cols-[minmax(340px,1fr)] gap-6 overflow-x-auto snap-x snap-mandatory"
+                    className="backdrop-blur-2xl no-scrollbar grid grid-flow-col md:auto-cols-[minmax(530px,1fr)] auto-cols-[minmax(400px,1fr)] gap-6 overflow-x-auto snap-x snap-mandatory"
                 >
                     {projects.map((project, index) => (
                         <article
                             key={project.title}
                             data-card
-                            className="group relative flex w-full min-w-0 snap-start flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-1 border-l-2 pl-4"
+                            className={`group relative flex w-full min-w-0 snap-start flex-col overflow-hidden transition-transform duration-300 pl-4 ${[1,2,0].includes(index) ? 'border-l-1 border-r-1 border-t-1 bg-[rgba(255,255,255,.02)]' : ''}`}
                         >
                             <Link href={project.link} target="_blank">
-                            <div className="bg-primary p-9 h-full ">
+                            <div className="p-2 rounded-4xl h-full">
                                
                                 <img
                                     src={project.cover}
                                     alt={project.title}
-                                    className="relative w-full object-contain h-[230px] transition duration-500 group-hover:scale-105 "
+                                    className="relative h-[300px] w-full object-contain transition duration-500 rounded-2xl  "
                                     loading="lazy"
                                 />
                              
                             </div>
                             </Link>
 
-                            <div className="flex flex-1 flex-col  pt-7 pb-5">
+                            <div className="flex flex-1 flex-col pb-4 pt-7 ">
                                 <div >
                                     <h3 className="text-2xl font-bold tracking-tight">{project.title}</h3>
                                     <p className="text-base leading-relaxed text-neutral-600">{project.description}</p>
                                 </div>
+                             <div className="flex justify-between mt-10">
+                                <div>
+                                <h1>Time</h1>
+                                 <h3 className="text-2xl text-primary font-bold tracking-tight ">{project.time}</h3>
+                                 </div>
+                                 <h2 className="flex items-center px-8 cursor-pointer bg-[rgba(255,255,255,.05)] border-[rgba(255,255,255,.05)] border-2 mr-5 rounded-4xl hover:scale-105 transition-all"><Link target="_blank" href={project.link}>View More</Link></h2>
+                             </div>
+                                
                                 <div className="mt-auto flex items-center justify-between pt-2">                                            
                                 </div>
                             </div>
