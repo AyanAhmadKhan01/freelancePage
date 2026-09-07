@@ -25,29 +25,29 @@ const cardData: BentoCardProps[] = [
   {
     color: 'rgba(255,255,255,.005)',
     title: 'Get Found Easily',
-    description: 'Higher Google visibility, more customers.',
+    description: 'I make sure Google can actually find your site — proper meta tags, structure, and speed from day one.',
     label: 'SEO Optimization',
     design: Seo
   },
   {
    color: 'rgba(255,255,255,.005)',
     title: 'One Website, Every Device',
-    description: 'Mobile, tablet, and desktop ready.',
+    description: 'Looks right whether it is opened on a phone, tablet, or widescreen monitor.',
     label: 'Responsive Design',
     design: Responsive
   },
   {
    color: 'rgba(255,255,255,.005)',
-    title: 'Speed matters',
-    description: 'Fast-loading sites that users love.',
+    title: 'Speed Matters',
+    description: 'Fast-loading pages, because slow sites lose visitors before they even scroll.',
     label: 'High Performance',
     design: Performance
   },
   {
    color: 'rgba(255,255,255,.005)',
-    title: 'Client Conversion',
-    description: 'Turn Visitors Into Clients',
-    label: 'More sales',
+    title: 'Clear Numbers, No Guesswork',
+    description: 'Simple analytics so you can see visits, clicks, and what is working — no confusing dashboards.',
+    label: 'Analytics & Results',
     design: MoreSales 
   },
   {
@@ -61,7 +61,7 @@ const cardData: BentoCardProps[] = [
   {
    color: 'rgba(255,255,255,.005)',
     title: 'Security',
-    description: 'Enterprise-grade protection',
+    description: 'HTTPS, secure hosting, and sane defaults — genuinely solid basics for a small business site.',
     label: 'Protection',
     design: Security 
   }

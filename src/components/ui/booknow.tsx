@@ -42,9 +42,9 @@ export default function Booknow() {
     <div className="flex flex-col h-[700px] justify-center items-center relative z-10 md:px-6 px-2">
       <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] leading-[1.05]
  text-white text-center font-extrabold">
-        Get Your MVP Built <br /> Fast and Scalable
+        Have a Project in Mind?
       </h1>
-      <Link href={'https://calendly.com/ayanahmadkhan042/30min'}>
+      <Link href={'https://wa.me/918172972398?text=Hi%20Ayan%2C%20I%27d%20like%20to%20talk%20about%20a%20project'}>
        <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}
@@ -52,7 +52,7 @@ export default function Booknow() {
            
          >
      
-        Book Now
+        Chat on WhatsApp
       </motion.div>
       </Link>
     </div>

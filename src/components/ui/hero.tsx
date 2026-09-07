@@ -17,7 +17,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="text-xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] text-center xl:text-left "
             >
-            We Build Your <span className="p-2 border-[rgba(255,255,255,.6)] backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)] ">Website Fast</span>
+            I Build Websites <span className="p-2 border-[rgba(255,255,255,.6)] backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)] ">That Actually Ship</span>
             </motion.h1>
               <motion.h1 
                 initial={{ opacity: 0, y: 30 }}
@@ -25,7 +25,7 @@ export default function Hero() {
                 transition={{ duration: 1.3, ease: "easeOut" }}
                 className="text-xl sm:text-3xl md:text-4xl xl:text-6xl font-[600] mt-2 xl:m-4 text-center xl:text-left"
             >
-           We Keep It  <span className="p-2 border-primary  border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]">Running Smoothly</span>
+           And I Keep Them <span className="p-2 border-primary  border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]">Running</span>
 
             </motion.h1>
             
@@ -42,7 +42,7 @@ export default function Hero() {
                 transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
                 className="mt-3 text-base sm:text-lg xl:text-xl text-center max-w-2xl "
             >
-                From design to development, domain to hosting, everything is set up for you in one simple, one-time package.
+                Design, code, and hosting, handled by one person: me. No agency layers, no back-and-forth with three different people. Just a working website, built fast and explained clearly.
             </motion.p>
             
             <motion.div 
@@ -52,7 +52,7 @@ export default function Hero() {
                
             />
             
-            <Link href={'https://calendly.com/ayanahmadkhan042/30min'}>
+            <Link href={'https://wa.me/918172972398?text=Hi%20Ayan%2C%20I%27d%20like%20to%20talk%20about%20a%20project'}>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function Hero() {
                     whileTap={{ scale: 0.8 }}
                     className="py-4 px-20 mt-8 border-primary backdrop-blur-3xl border-2 bg-[rgba(255,255,255,.05)] rounded-2xl shadow-[inset_0_10px_0px_rgba(255,255,255,.09)]"
                 >
-                    Book A Meeting
+                    Chat on WhatsApp
                 </motion.div>
                 
             </Link>

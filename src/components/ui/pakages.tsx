@@ -1,73 +1,72 @@
 import { Globe, Layers, Box, Check } from "lucide-react";
 import Link from "next/link";
-import { motion } from "motion/react";
 
 export default function Service() {
     const services = [
   {
-    title: "AI Powered Website",
-    tagline: "Fast, fully ready, worry-free",
+    title: "Starter Site",
+    tagline: "A clean, fast site to get you online",
     ideal: 'Portfolio, Landing Page, Small Business',
     features: [ 
-         "Up to 1 pages",
-         "5-8 sections per page",
-         "Clean design",
+         "Up to 1 page",
+         "5–8 sections",
+         "Clean, simple design",
          "Fully responsive",
-         "Basic SEO",
-         "Basic Hover, Transition",
-         "1 Revision (text/colors only)",
-         "Delivery in 2–7 days",
+         "Basic SEO setup",
+         "Light hover/transition animations",
+         "1 round of revisions (text/colors)",
+         "Delivered in 2–7 days",
          ],
           
 price: "$149",
     icon: <Globe size={75} className="text-primary" />
   },
   {
-    title: "Custom Website",
-    tagline: "Fully custom, clean code",
+    title: "Custom Site",
+    tagline: "Fully custom, written cleanly, built to last",
     ideal: 'Startup, Professional Portfolio, Marketing Site',
      features: [
        "Up to 4 pages",
-       "6 Section Per Page",
-       "Heavy design",
+      "6 sections per page",
+      "Custom design, not a template",
        "Fully responsive",
        "SEO-ready",
-       "Limited animations included",
-        "2 Revision",
-        "Delivery in 15–30 days",
+      "A few thoughtful animations",
+       "2 rounds of revisions",
+       "Delivered in 15–30 days",
      ],
-     price: "$499",
+    price: "$499",
     icon: <Layers size={75}  className="text-primary" />
   },
   {
-    title: "Full Scale Web App",
-    tagline: "Serious products, scalable MVP",
+    title: "Web App",
+    tagline: "For real products that need to scale",
     ideal: 'SaaS, Marketplaces, Product MVP',
     features: [
       "Up to 15 pages",
-       "6 Section Per Page",
-      "Complex design",
-      "Scalable, responsive",
+      "6 sections per page",
+          "More complex, custom design",
+          "Scalable and fully responsive",
       "SEO-ready",
       "Animations included",
-      "4 Revision",
-      "Delivery in 5–18 weeks",
+      "4 rounds of revisions",
+      "Delivered in 5–18 weeks",
     ],
-    price: '$1999',
+    price: '$1,999',
     icon: <Box size={75}  className="text-primary" />
   }
 ];
     return(
         <> <div id="pricing" className="text-center py-10 border-y-1">
-  <h2 className="text-xl opacity-35">// Pay Once. Own Your Website.</h2>
-  <h1 className="text-5xl mt-2">Simple Pricing</h1>
+  <h2 className="text-xl opacity-35">{"// Pay Once. Own Your Website."}</h2>
+  <h1 className="text-5xl mt-2">Simple, Honest Pricing</h1>
 </div>
 
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5 m-auto md:mx-10 ">
       {services.map((service, idx) => (
         <div key={idx} className={`border-x-2 md:px-5 px-0 border-[rgba(255,255,255,0.09)] w-[500px] shadow-sm backdrop-blur-md ${idx === 1 ? 'bg-[rgba(255,255,255,.05)]' : ''}`}>
-             <div className="flex gap-12 items-center justify-center my-10"> 
-              <h1 className="text-4xl">{service.price}<span className="text-xl opacity-60">/One-Time</span></h1>
+             <div className="flex gap-12 items-center justify-center my-10">
+              <h1 className="text-3xl">{service.price}<span className="text-xl opacity-60"> / one-time</span></h1>
               {service.icon}
               </div>
              
@@ -88,8 +87,8 @@ price: "$149",
       </div>
      ))}      
         </div>
-             <Link href={'/book'}>
-            <div className={`flex justify-center w-[90%] m-auto rounded-full mb-10 p-3 text-lg  ${idx === 1 ? 'bg-[rgb(163,230,53)]' : idx === 0 ? 'bg-[rgb(255,255,255,.05)]' : idx === 2 ? 'bg-[rgb(255,255,255,.05)]' : 'bg-[rgb(255,255,255,.05)]'}`}>Getting Started</div>
+             <Link href={`https://wa.me/918172972398?text=${encodeURIComponent(`Hi Ayan, I’m interested in the ${service.title} plan`)}`}>
+            <div className={`flex justify-center w-[90%] m-auto rounded-full mb-10 p-3 text-lg  ${idx === 1 ? 'bg-[rgb(163,230,53)]' : idx === 0 ? 'bg-[rgb(255,255,255,.05)]' : idx === 2 ? 'bg-[rgb(255,255,255,.05)]' : 'bg-[rgb(255,255,255,.05)]'}`}>Let&apos;s Talk</div>
               </Link>
         </div>
       ))}

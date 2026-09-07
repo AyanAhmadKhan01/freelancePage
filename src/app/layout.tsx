@@ -14,23 +14,23 @@ const inter = Inter({
 
 
 export const metadata = {
-  title: "Mvp Fast | Best Web Development Agency in Bangalore",
+  title: "Ayan Codes | Websites That Actually Ship",
   description:
-    "Mvp Fast offers full-stack website development in Bangalore. Experts in React, Next.js, Node.js, Prisma, MongoDB, AWS, and more.",
+    "Ayan Codes builds fast, thoughtful websites with design, development, and hosting handled by one person in Bangalore.",
   keywords:
-    "Web Development Agency Bangalore, Full Stack Development Bangalore, Next.js Developers Bangalore, React Agency India, Startup Web Agency Bangalore",
+    "Ayan Codes, freelance web developer Bangalore, full-stack developer India, Next.js developer, React developer",
   verification: {
     google: "tdvRZe94YDHuXcrksdEvvVCSB8_z6OtNkDifOFp5gH4",
   },
   openGraph: {
-    title: "Mvp Fast - Website Development Agency in Bangalore",
+    title: "Ayan Codes - Websites That Actually Ship",
     description:
-      "We build fast, scalable, modern websites using React, Next.js, Node.js, Prisma, MongoDB, PostgreSQL, AWS & more.",
+      "Design, code, and hosting handled by one person. Ayan Codes builds clear, fast, modern websites for founders and small businesses.",
     url: "https://mvpfast.vercel.app",
     images: [
       {
         url: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1758325540/zhqadz7p8wunxoczo9mh.png",
-        alt: "Mvp Fast Preview",
+        alt: "Ayan Codes website preview",
       },
     ],
   },

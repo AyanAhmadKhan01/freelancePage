@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="flex justify-between items-center w-[90%] mt-4 lg:mt-10 mb-2 lg:mb-5 p-3 lg:p-4 rounded-2xl lg:rounded-4xl border-2 bg-[rgba(255,255,255,.04)] backdrop-blur-md">
                 
                 <div>
-                    <h2 className="text-lg lg:text-xl"><span className="font-extrabold tracking-tighter">Mvp</span> Fast</h2>    
+                    <h2 className="text-lg lg:text-xl"><span className="font-extrabold tracking-tighter">Ayan</span> Codes</h2>
                 </div>
                 
                 <div className="hidden lg:flex items-center gap-10">
@@ -24,10 +24,10 @@ export default function Navbar() {
                     <h3 className="cursor-pointer hover:text-primary transition-colors">Services</h3>
                     </Link>
                     <Link href={'#tech'}>
-                    <h3 className="cursor-pointer hover:text-primary transition-colors">Technologies We use?</h3>
+                                        <h3 className="cursor-pointer hover:text-primary transition-colors">Tech I Use</h3>
                     </Link>
                       <Link href={'#book'}>
-                    <h3 className="cursor-pointer hover:text-primary transition-colors mr-5">Book a Meeting</h3>
+                                        <h3 className="cursor-pointer hover:text-primary transition-colors mr-5">Message Me</h3>
                     </Link>
                    
                 </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
                         className="cursor-pointer hover:text-primary transition-colors py-2 border-b border-primary/10"
                         onClick={() => setIsOpen(false)}
                     >
-                        Technologies We use?
+                        Tech I Use
                     </h3>
                     </Link>
                      <Link href={'#book'}>
@@ -85,7 +85,7 @@ export default function Navbar() {
                         className="cursor-pointer hover:text-primary transition-colors py-2"
                         onClick={() => setIsOpen(false)}
                     >
-                        Book a Meeting
+                        Message Me
                     </h3>
                     </Link>
                 </div>

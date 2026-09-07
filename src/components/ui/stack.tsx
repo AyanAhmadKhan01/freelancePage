@@ -63,8 +63,8 @@ export default function Skills() {
   return (
     <>
        <div className="text-right pr-10 mt-5 mb-10 py-10 border-y-1">
-  <h2 className="text-xl opacity-35">// Technologies We Use</h2>
-  <h1 className="text-5xl mt-2">Our Stack</h1>
+  <h2 className="text-xl opacity-35">{"// Tools I Use"}</h2>
+  <h1 className="text-5xl mt-2">My Stack</h1>
 </div>
       <div>
       <div className="m-5 last:m-0">

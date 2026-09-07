@@ -2,13 +2,13 @@
 
 import Link from "next/link"
 import { motion } from "motion/react"
-import { CalendarClock, Brush, Code2, Rocket, MessagesSquare, BarChart3, ArrowRight } from "lucide-react"
+import { MessageSquare, Brush, Code2, Rocket, MessagesSquare, ArrowRight } from "lucide-react"
 
 const steps = [
   {
-    title: "Step 1 · Book a Call",
-    detail: "Schedule a 30-min kickoff to align on your goals, needs, and timeline.",
-    icon: <CalendarClock className="size-6" />,
+    title: "Step 1 · Send a Message",
+    detail: "Message me on WhatsApp or email with a quick idea of what you need. A call is optional, not required.",
+    icon: <MessageSquare className="size-6" />,
     badge: "Day 0",
   },
   {
@@ -18,26 +18,26 @@ const steps = [
     badge: "Day 0",
   },
   {
-    title: "Step 3 · 40% Kickoff Payment",
+    title: "Step 3 · 40% Advance",
     detail: "Pay 40% to start the build. Remaining 60% is due at delivery.",
     icon: <Code2 className="size-6" />,
     badge: "Day 0–1",
   },
   {
     title: "Step 4 · Build Starts",
-    detail: "We start creating your website with your approved design, content, and animations.",
+    detail: "I start building based on what we agreed on.",
     icon: <Rocket className="size-6" />,
     badge: "Day 1–3",
   },
   {
     title: "Step 5 · Daily Updates",
-    detail: "Receive progress updates and approve via your preferred platform (Notion, WhatsApp, Slack).",
+    detail: "You’ll get regular written updates — Notion, WhatsApp, or email, whatever’s easiest for you.",
     icon: <MessagesSquare className="size-6" />,
     badge: "Daily",
   },
   {
-    title: "Step 6 · Deployment",
-    detail: "We deploy your site, connect analytics, and provide a walkthrough.",
+    title: "Step 6 · Delivery",
+    detail: "I deploy the site, connect analytics, and walk you through everything in writing.",
     icon: <ArrowRight className="size-6" />,
     badge: "Launch",
   },
@@ -48,6 +48,9 @@ const steps = [
 export default function BookNow() {
     return (
         <>
+        {steps.map(() => {
+
+        })}
             <div className="bg-black border-2 border-[rgba(255,255,255,0.09)] min-h-screen">
                 <div className="relative mx-auto flex max-w-[1200px] flex-col gap-12 px-5 py-16 lg:px-10 lg:py-20">
                     <div className="pointer-events-none absolute inset-y-6 -left-6 hidden h-[calc(100%-3rem)] w-[2px] rounded-full bg-[rgba(255,255,255,0.14)] lg:block" style={{ backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0.14) 70%, transparent 70%)", backgroundSize: "6px 18px" }} />
@@ -61,21 +64,21 @@ export default function BookNow() {
                         className="space-y-4 text-center lg:text-left"
                     >
                         <p className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-primary">
-                            MVP fast · Our Process
+                            Ayan Codes · My Process
                         </p>
                         <h1 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-                            Here’s how we ship your MVP in days
+                            Here’s How We’d Work Together
                         </h1>
                         <p className="text-base text-white/70 sm:text-lg lg:max-w-3xl">
-                            We make building your website or MVP fast and hassle-free. From your first call to final deployment, we handle design, development, and hosting so you can focus on your business. You get a fully responsive, polished product with light animations and SEO-ready setup all delivered in just a few days. Every step is transparent, and we keep you updated so there are no surprises.
+                            I handle design, development, and hosting directly. We’ll agree on the scope in writing, I’ll keep you updated as I build, and you’ll know what’s happening at every step.
                         </p>
-                        <Link href="https://calendly.com/ayanahmadkhan042/30min" className="inline-flex items-center justify-center">
+                        <Link href="https://wa.me/918172972398?text=Hi%20Ayan%2C%20I%27d%20like%20to%20talk%20about%20a%20project" className="inline-flex items-center justify-center">
                             <motion.span
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="rounded-2xl border-primary/60 bg-primary px-4 py-3 text-sm font-semibold text-black shadow-md"
                             >
-                                Book a 30-min fit call
+                                Send a Message
                             </motion.span>
                         </Link>
                     </motion.div>

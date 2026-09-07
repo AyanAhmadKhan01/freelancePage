@@ -15,8 +15,8 @@ export default function Footer() {
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-8 lg:mt-16 mx-3 sm:mx-6 pb-6 lg:pb-10 border-b-2 gap-6 lg:gap-0">
                 
                 <div className="text-center lg:text-left">
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl"><span className="font-extrabold tracking-tighter">Mvp</span> Fast</h1>
-                    <p className="text-sm sm:text-base mt-1">Launch your MVP faster than ever, start today.</p>
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl"><span className="font-extrabold tracking-tighter">Ayan</span> Codes</h1>
+                    <p className="text-sm sm:text-base mt-1">Building websites, one project at a time.</p>
                 </div>
                 
            
@@ -34,7 +34,7 @@ export default function Footer() {
             
     
             <div className="flex flex-col sm:flex-row items-center justify-between my-6 lg:my-10 mx-3 sm:mx-5 gap-3 sm:gap-0 text-center sm:text-left">
-             <h2 className="text-xs sm:text-sm lg:text-base">© 2025 All Rights Reserved</h2>
+             <h2 className="text-xs sm:text-sm lg:text-base">© 2026 All Rights Reserved</h2>
            <h2 className="text-xs sm:text-sm lg:text-base">
   Designed & Developed by{" "}
   <Link 

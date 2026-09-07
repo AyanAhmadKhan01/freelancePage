@@ -8,28 +8,28 @@ export default function whychooseus() {
  const json = {
   "cards": [
     {
-      "title": "Traditional Agencies",
-      "subtitle": "Slow timelines, heavy overhead.",
+      "title": "Big Agencies",
+      "subtitle": "Long queues, heavy overhead.",
       "points": [
-        "Long delivery cycles",
-        "High fixed costs",
-        "Limited technical ownership"
+        "Your project waits behind others",
+        "You talk to a manager, not the developer",
+        "Higher cost to cover their overhead"
       ]
     },
     {
-      "title": "Why Top Startups Choose Us",
-      "subtitle": "Fast MVPs. Scalable architectures. Modern stacks.",
+      "title": "Working With Me",
+      "subtitle": "Direct communication and careful work.",
       "points": [
-        "MVP in weeks, production-ready code",
-        "Agency-grade quality with solo speed",
-        "Transparent pricing & full handover",
-        "Design, development, and deployment",
-         "Domain and hosting included for 1 year",
+        "You talk directly to the person writing your code",
+        "Clear, written updates, no vague status calls",
+        "Honest timelines, and I’ll tell you if something isn’t realistic",
+        "Fair pricing since it’s just me, no agency markup",
+        "Domain + hosting help included so you’re not left stuck after launch",
       ],
     },
     {
-      "title": "Template Shops",
-      "subtitle": "Cheap upfront, costly later.",
+      "title": "Cheap Template Sites",
+      "subtitle": "Cheap upfront, limited later.",
       "points": [
         "Limited customization",
         "Hidden technical debt",
@@ -44,8 +44,8 @@ export default function whychooseus() {
   return (
     <>  
     <div className="pl-10 py-10 border-y-1 mb-0 xl:mb-60">
-      <h2 className="text-xl opacity-35">// Everything You Need to Launch Fast</h2>
-      <h1 className="text-5xl mt-2">Why Us</h1>
+      <h2 className="text-xl opacity-35">{"// Why Work With Me"}</h2>
+      <h1 className="text-5xl mt-2">Why Me</h1>
     </div>
       <div  className="mt-0 px-4 lg:px-0">
           <div className="border-t-2 w-[120px] lg:w-[200px] ml-auto border-primary"></div>
