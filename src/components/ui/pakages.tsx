@@ -19,6 +19,7 @@ export default function Service() {
          ],
           
 price: "$149",
+ruppes: "₹12,500",
     icon: <Globe size={75} className="text-primary" />
   },
   {
@@ -36,6 +37,7 @@ price: "$149",
        "Delivered in 15–30 days",
      ],
     price: "$499",
+    ruppes: "₹41,500",
     icon: <Layers size={75}  className="text-primary" />
   },
   {
@@ -53,6 +55,7 @@ price: "$149",
       "Delivered in 5–18 weeks",
     ],
     price: '$1,999',
+     ruppes: "₹1,66,000",
     icon: <Box size={75}  className="text-primary" />
   }
 ];
@@ -65,11 +68,21 @@ price: "$149",
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-5 m-auto md:mx-10 ">
       {services.map((service, idx) => (
         <div key={idx} className={`border-x-2 md:px-5 px-0 border-[rgba(255,255,255,0.09)] w-[500px] shadow-sm backdrop-blur-md ${idx === 1 ? 'bg-[rgba(255,255,255,.05)]' : ''}`}>
-             <div className="flex gap-12 items-center justify-center my-10">
-              <h1 className="text-3xl">{service.price}<span className="text-xl opacity-60"> / one-time</span></h1>
-              {service.icon}
-              </div>
-             
+       
+            <div className="flex gap-6 sm:gap-10 items-center justify-center my-10">
+  <div className="text-center sm:text-right">
+    <h1 className="text-3xl font-semibold leading-tight">
+      {service.price}
+      <span className="text-lg opacity-60"> / one-time</span>
+    </h1>
+    <p className="text-base text-primary/80 mt-1">
+     {service.ruppes}
+    </p>
+  </div>
+  {service.icon}
+</div>
+              
+            
           <div className="flex flex-col items-centern mb-2 space-x-3 p-6">
             <h2 className="text-4xl font-semibold">{service.title}</h2>
               <p className=" text-[rgba(255,255,255,0.6)]">{service.tagline}</p>
